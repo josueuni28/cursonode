@@ -1,0 +1,29 @@
+{
+  "name": "cursonode",
+  "version": "1.0.0",
+  "description": "Aulas do curso NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "ola",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josueuni28/cursonode.git"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "express",
+    "fs",
+    "path",
+    "url",
+    "mongodb"
+  ],
+  "author": "Josué Leite de Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josueuni28/cursonode/issues"
+  },
+  "homepage": "https://github.com/josueuni28/cursonode#readme"
+}
