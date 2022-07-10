@@ -1,6 +1,7 @@
 # Arquivos e pastas que devem ser ignorarados
 
 node_modules/
+fs/index0.html
 
 *.txt
 *.rar
