@@ -2,7 +2,9 @@
 
 node_modules/
 fs/index0.html
+.gitignore
 
 *.txt
 *.rar
 *.zip
+*.gitignore
