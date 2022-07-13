@@ -9,7 +9,16 @@
 <body>
     <div>
         <h1>Olá Mundo</h1>
-        <span>O Arquivo foi renderizado com sucesso!</span>
+        <span id="comment">O Arquivo foi renderizado com sucesso!</span>
+        <button id="sub">Remover comentario</button>
     </div>
+    <script>
+        const comment = document.querySelector('#comment')
+        const btn = document.querySelector('#sub')
+
+        btn.addEventListener('click',()=>{
+            comment.innerHTML = ""
+        })
+    </script>
 </body>
 </html>

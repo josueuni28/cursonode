@@ -2,7 +2,7 @@ const fs = require("fs")
 const path = require('path')
 const {spawn} = require('child_process')
 
-// [0]node [1]dir [2]./pasta [3]arquivo.mp4(COM A EXTENSÃO) 
+// [0]node [1]video [2]./pasta [3]arquivo.mp4(COM A EXTENSÃO) 
 const parent = process.argv[2]
 const arquivo = process.argv[3]
 let videos = [];
@@ -13,11 +13,27 @@ const dirp = __dirname
 const alldir = dirp + '/' + psave
 const pth = path.resolve(parent)
 
-/*como fiz umas modificações do projeto original da aula,
+/*
+  Como fiz umas modificações do projeto Original da aula,
   ainda não esta totalmente em sincronia, mas está funcionando certinho:
-  - Modifiquei para converter de uma unica vez todos os videos da pasta (Sem precisar passar os nomes).
+
+  - Modifiquei para comprimir de uma unica vez todos os videos da pasta (Sem precisar passar todos os nomes).
   - E ele já cria (Se não tiver) a pasta "result" e joga o(s) arquivo(s) convertido(s) nela.
-  Talvez um callback ou emitter resolva 100%
+
+  Talvez um callback ou emitter resolva 100% e preciso ler a documentação do FFMPEG para tentar
+  sanar erros internos que ele está gerando na compressão.
+
+  PARA USAR é bem simples:
+
+  node video <diretorio> ?<nomedovideo>
+
+  <diretorio>: especificar um diretorio, para usar na pasta atual só digitar "./" (sem as aspas).
+  <nomedovideo>: especifar o nome do video ( com a extensão Ex: video.mp4 ) porém não é obrigatório, se não incluir ele vai comprimir todos os arquivos de video que encontrar na pasta indicada.
+
+  Exemplos:
+  node video ./ vinheta.mp4
+  node video ./
+  node video ./cursos/
 */
 
 if(!fs.existsSync(alldir)){

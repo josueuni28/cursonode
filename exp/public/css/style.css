@@ -1,0 +1,17 @@
+*{
+    padding: 10px;
+    box-sizing: border-box;
+}
+h1{
+    background-color: brown;
+    color: white;
+}
+.container{
+    width: 50%;
+    height: 50vh;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
