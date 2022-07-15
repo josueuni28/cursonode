@@ -8,3 +8,5 @@ O problema era que o nome "JLS" estava configurado no diretorio local e eu estav
 Ai quando eu dava o push enviava com o nome do autor (author) "JLS" local e não o global **[josueuni28](https://github.com/josueuni28)**
 <br><br>
 Agora, bora que bora!
+# Update 2
+Aulas do curso NodeJS completa.
