@@ -1,0 +1,33 @@
+### get subscribers
+GET http://localhost:3000/subscribers
+### acessando admin via post
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "userName":"Lucas",
+    "userChannel":"ASSAI"
+}
+### get vistos
+GET http://localhost:3000/vistos
+### acessando vistos via post
+POST http://localhost:3000/vistos
+Content-Type: application/json
+
+{
+    "login":"Eliana",
+    "senha":"123456"
+}
+### get subscribers com um id
+GET http://localhost:3000/subscribers/62d1a4f9282e4979781d6005
+### delete subscribers com um id
+DELETE http://localhost:3000/subscribers/62d1a446e86b099e02269701
+### acessando admin via post
+PATCH  http://localhost:3000/subscribers/62d1a4f9282e4979781d6005
+Content-Type: application/json
+
+{
+    "userName":"Luana",
+    "userChannel":"ASSAI"
+}
+###
