@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p List of #{title}
+  div#users
+    - const vus = ['Marcos','Antônio','Lia','Gabriela','Luiz']
+    each vu in vus
+      li
+        a(href='/users/'+vu)= vu
+  p
+    a(href='/') Go to Home
